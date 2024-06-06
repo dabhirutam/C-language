@@ -23,5 +23,16 @@ main(){
     }
 
     printf("\nEven numbers of array :- %d", even);
-    printf("\nOdd numbers of array :- %d", odd);
+    for(r=0; r<size; r++){
+        if(array[r]%2==0){
+            printf("\nArray [%d] = %d", r, array[r]);
+        }
+    }
+
+    printf("\n5\nOdd numbers of array :- %d", odd);
+    for(r=0; r<size; r++){
+        if(array[r]%2!=0){
+            printf("\nArray [%d] = %d", r, array[r]);
+        }
+    }
 }
